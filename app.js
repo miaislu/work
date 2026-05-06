@@ -1,5 +1,97 @@
 const weeklyReports = [
   {
+    id: "2026-W18",
+    label: "2026 第 18 周 · 4/27-5/3",
+    updated: "2026-05-06",
+    theme: "AI 硅光上市与融资同周升温，TFLN 开始补齐 WDM 平台器件",
+    materials: ["硅光", "光 I/O", "TFLN", "WDM", "PASIC"],
+    summary:
+      "本周的行业主线从“技术验证”进一步走向“资本市场定价”。曦智科技 4 月 28 日在港交所上市，成为 AI 硅光芯片公司进入二级市场的标志性事件；灵动芯光完成数千万元天使++轮融资，资金聚焦芯片间光互联、SmartComb 多波长密波光源和 SmartPHY 光 I/O 小芯粒；海外 OpenLight 追加 5000 万美元 Series A-1 融资，把异质集成硅光 PDK、400G 调制器和片上 InP 激光器推到商业化扩张阶段。科研侧，中山大学团队在 ACS Photonics 发表 DUV 光刻兼容的 TFLN 偏振不敏感波长解复用器，说明 TFLN 平台正在从调制器单点突破，补齐 WDM、偏振处理和规模制造所需的无源器件库。",
+    watch: [
+      "曦智科技上市后的收入确认、客户集中度、毛利率和光互连产品复购情况",
+      "灵动芯光 SmartComb 与 SmartPHY 是否形成可验证的芯片间光互连样机",
+      "TFLN DUV 工艺能否把调制器、复用/解复用、偏振处理集成到同一平台 PDK",
+    ],
+    items: [
+      {
+        category: "公司动态",
+        date: "2026-04-28",
+        title: "曦智科技在港交所上市，AI 硅光芯片进入二级市场定价窗口",
+        summary:
+          "4 月 28 日，曦智科技在港交所主板挂牌上市，报道称其成为全球首家登陆资本市场的 AI 硅光芯片企业。上市首日开盘价 880 港元/股，较发行价 183.2 港元/股上涨 380.3%，收盘 886 港元/股，上涨 383.62%，总市值约 815 亿港元。招股书口径显示，公司围绕光子矩阵计算、片上光网络、片间光网络三条技术线，主营光互连与光计算，应用于 AI 数据中心、云计算和自动驾驶。本周观点是：资本市场已经愿意给“以光代电”的 AI 算力基础设施较高溢价，但后续需要用真实交付、收入质量和客户复购来证明估值。",
+        facts: [
+          ["资本事件", "2026-04-28 港交所上市"],
+          ["首日表现", "收盘 886 港元/股，较发行价 +383.62%"],
+          ["业务主线", "光互连、光计算、片上/片间光网络"],
+        ],
+        tags: ["曦智科技", "硅光", "AI 光互连", "IPO", "港股"],
+        source: "https://jg-static.eeo.com.cn/article/info?channelUuid=9905934f8ec548ddae87652dbb9eebc6&id=c4810d0b5f9a4aaea9a13f8d9e4ba550",
+      },
+      {
+        category: "公司动态",
+        date: "2026-04-30",
+        title: "灵动芯光完成数千万元天使++轮融资，押注芯片间光互联",
+        summary:
+          "36 氪消息显示，硅基光子企业灵动芯光完成数千万元天使++轮融资，由磐霖资本领投，同方投资与深天使合作的子基金汇泽天诚跟投。募集资金将用于芯片间光互联核心技术研发与产品落地，重点推进 SmartComb 多波长密波光源产品化及 SmartPHY 光 I/O 小芯粒研发。这个融资样本和光联芯科形成呼应：一级市场正从传统光模块环节向芯片级光 I/O、片间互联、光源阵列和小芯粒封装迁移。后续要看其光源梳线稳定性、通道间串扰、封装耦合效率和与 GPU/交换 ASIC 生态的接口方案。",
+        facts: [
+          ["融资轮次", "天使++轮，数千万元"],
+          ["投资方", "磐霖资本领投；同方投资、汇泽天诚跟投"],
+          ["资金用途", "SmartComb 多波长密波光源；SmartPHY 光 I/O 小芯粒"],
+        ],
+        tags: ["灵动芯光", "一级市场", "融资", "硅基光子", "光 I/O"],
+        source: "https://www.36kr.com/newsflashes/3788621546282246",
+      },
+      {
+        category: "公司动态",
+        date: "2026-04-28",
+        title: "OpenLight 追加 5000 万美元融资，异质集成硅光 PDK 商业化提速",
+        summary:
+          "OpenLight 宣布完成追加 5000 万美元 Series A-1 融资，使总融资额达到 8400 万美元。本轮由 Matter Venture Partners 领投，Acclimate Ventures、Catapult Ventures 以及 Xora Innovation、Capricorn Investment Group、Mayfield、New Legacy 等新老投资方参与。公司定位是定制化 Photonic ASIC/PASIC 设计，融资将支持扩展主动与无源光子器件 PDK，包括 400G 调制器和异质集成片上 InP 激光器。行业含义是：硅光竞争正在从“单颗器件性能”转向“PDK、异质集成、客户可复用设计库和制造生态”。",
+        facts: [
+          ["融资", "Series A-1 追加 5000 万美元；总融资 8400 万美元"],
+          ["技术重点", "400G modulator；InP heterogeneously integrated on-chip laser"],
+          ["商业模式", "Custom PASIC / silicon photonics PDK"],
+        ],
+        tags: ["OpenLight", "硅光", "PASIC", "InP 激光器", "400G"],
+        source: "https://www.datacenterdynamics.com/en/news/silicon-photonics-startup-openlight-raises-additional-50m-in-extended-series-a-funding-round/",
+      },
+      {
+        category: "科研论文",
+        date: "2026-04-30",
+        title: "中山大学团队展示 DUV 光刻兼容的 TFLN 偏振不敏感波长解复用器",
+        summary:
+          "ACS Photonics 论文报道一种面向 TFLN 光子平台的 polarization-insensitive wavelength demultiplexer，器件采用偏振分集方案，由五个 multimode waveguide gratings 和六个 polarization splitter-rotators 构成，可实现五个波长通道。论文重点不是调制器本身，而是补齐通信 PIC 所需的 WDM 与偏振处理模块，并强调 deep-ultraviolet lithography 兼容性。主要观点是：TFLN 如果要进入高容量光通信芯片，必须从高速低压调制扩展到可量产的无源器件库；DUV 工艺兼容、偏振不敏感和多通道 WDM 是平台化的关键里程碑。",
+        paperMeta: {
+          authors: "Xuejie Mu、Binneng Li、Jiande Cao、Zhongjin Lin、Xinlun Cai 等",
+          affiliations: "中山大学电子与信息技术学院，光电材料与技术国家重点实验室；合肥国家实验室",
+          journal: "ACS Photonics",
+          published: "2026-04-30",
+        },
+        facts: [
+          ["器件", "TFLN polarization-insensitive wavelength DEMUX"],
+          ["结构", "5 个 MWG + 6 个 PSR，五波长通道"],
+          ["工艺", "Deep-ultraviolet lithography compatible"],
+        ],
+        tags: ["TFLN", "WDM", "DEMUX", "DUV", "中山大学"],
+        source: "https://pubs.acs.org/doi/full/10.1021/acsphotonics.6c00573",
+      },
+      {
+        category: "产业进展",
+        date: "2026-04-29",
+        title: "美股光通信板块延续强势，AI 数据中心光器件景气仍在交易中",
+        summary:
+          "经济观察网 4 月 29 日消息称，美股光通信板块多数上涨，其中 Lumentum 涨超 7%，AAOI 涨超 5%，Credo 涨超 4%。这类市场表现本身不是技术突破，但它反映投资者仍在交易 AI 数据中心带来的光模块、激光器、线性驱动、SerDes 和光互连升级周期。与上一周的 Lumentum 关注度相连，本周观点是：资本市场继续给光通信上游景气定价，但需要把短期股价和长期产业趋势分开，尤其关注订单能见度、产能瓶颈、价格压力和客户集中风险。",
+        facts: [
+          ["市场表现", "Lumentum +7% 以上；AAOI +5% 以上；Credo +4% 以上"],
+          ["驱动逻辑", "AI 数据中心光互连和高速光器件需求"],
+          ["跟踪变量", "订单、产能、价格、客户集中度"],
+        ],
+        tags: ["Lumentum", "AAOI", "Credo", "光通信板块", "AI 数据中心"],
+        source: "https://www.eeo.com.cn/2026/0429/857799.shtml",
+      },
+    ],
+  },
+  {
     id: "2026-W17",
     label: "2026 第 17 周 · 4/20-4/26",
     updated: "2026-04-27",
